@@ -11,5 +11,12 @@
     "lazyload"
   ],
   "author": "davey.job@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "url": "git@github.com:vipsunwei/swLazyload.git"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }

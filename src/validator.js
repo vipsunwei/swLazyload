@@ -114,7 +114,7 @@
         let eventType = this.settings.defaultEvent
         let events = ['input', 'change', 'blur', 'keyup', 'focusout']
         if (!eventType || $.inArray(eventType, events) === -1) {
-          throw new Error('您没有指定defaultEvent或者您指定的defaultEvent不在本插件支持的事件范围内')
+          throw new Error('您没有指定defaultEvent或者您指定的defaultEvent不在本插件支持的事件范围内, 如使用默认事件请不要传defaultEvent属性')
         }
         // 绑定事件
         $(this.curForm).on(eventType, ':text', proxyFn)

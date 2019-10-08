@@ -59,7 +59,7 @@ let defaults = {
   </head>
 
   <body style="width: 100%">
-    <h2>基于jQuery图片懒加载插件示例</h2>
+    <h2>基于jQuery的微型表单验证插件示例</h2>
     <form id="myForm" action="" method="post" class="mui-input-group">
       <div class="mui-input-row">
         <label> 用户名: </label>

@@ -55,7 +55,7 @@ let defaults = {
     }
   </style>
     <script src="../../node_modules/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../../src/validator.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./validator.js" type="text/javascript" charset="utf-8"></script>
   </head>
 
   <body style="width: 100%">
@@ -86,6 +86,7 @@ let defaults = {
         // 如果不使用自定义事件，请不要在参数中传递defaultEvent属性。
   			// defaultEvent: '',
         defaultEvent: "keyup", // 自定义校验触发事件
+        // 规则暂时支持`required`, `minlength`, `maxlength`, `email`, `mobile`, `IDCard` 校验
         rules: {
           userName: {
             maxlength: 12,
@@ -107,8 +108,8 @@ let defaults = {
         messages: {
           userName: {
             // required: '必填字段',
-            maxlength: "最多可以输入 {0} 个字符",
-            minlength: "最少要输入 {0} 个字符"
+            maxlength: "最多可以输入 {0} 个字符", // {0} 会被替换成rules中传递的 12
+            minlength: "最少要输入 {0} 个字符"    // {0} 会被替换成rules中传递的 6
           },
           mobile: {
             mobile: "请输入有效的手机号码"

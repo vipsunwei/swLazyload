@@ -71,7 +71,7 @@ let _defaults = {
       margin-bottom: 20px;
     }
   </style>
-  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../../node_modules/jquery/dist/jquery.js"></script>
 </head>
 
 <body style="width: 100%">
@@ -92,7 +92,7 @@ let _defaults = {
     <img class="lazy-img" data-srcset="https://pbs.twimg.com/media/EEq5f-GUEAozu7c.jpg">
   </div>
 
-  <script src="./../src/lazyload.js"></script>
+  <script src="./lazyload.js"></script>
   <script>
     // 调用插件
     $(".lazy-box").lazyload({

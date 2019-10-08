@@ -29,9 +29,9 @@
       minlength: '输入内容太短'
     },
     defaults: {
-      errorElement: 'labal',
+      errorElement: 'span',
       errorClass: 'error',
-      validClass: 'valid',
+      // validClass: 'valid',
       ignore: ':hidden',
       rules: {},
       messages: {},
@@ -118,7 +118,7 @@
         }
         // 绑定事件
         $(this.curForm).on(eventType, ':text', proxyFn)
-        $(this.curForm).on('focusin', ':text', proxyFn)
+        // $(this.curForm).on('focusin', ':text', proxyFn)
       },
       getRules: function(element) {
         let oldRules = $.extend( {}, this.settings.rules[element.name] )
